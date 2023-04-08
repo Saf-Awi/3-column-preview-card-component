@@ -1,0 +1,114 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+--clr-bright-orange: hsl(31, 77%, 52%);
+--clr-dark-cyan: hsl(184, 100%, 22%);
+--clr-very-dark-cyan: hsl(179, 100%, 13%);
+--clr-transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--clr-very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--clr-very-light-gray-background-headings-buttons);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+   
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color:  var(--clr-very-light-gray-background-headings-buttons);
+    font-size: 35px;
+}
+
+.sedans, .suvs, .luxury {
+    width: 200px;
+    height: 400px;
+    padding: 30px;
+    color: var(--clr-transparent-white-paragraphs);
+}
+
+svg {
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 100px;
+    font-weight: 400;
+}
+
+.sedans {
+    background-color: var(--clr-bright-orange);
+}
+
+.sedans-btn {
+    color: var(--clr-bright-orange);
+}
+
+.sedans-btn:hover {
+    background-color: var(--clr-bright-orange);
+    color: var(--clr-transparent-white-paragraphs);
+    border: 1px solid var(--clr-transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+.suvs {
+    background-color: var(--clr-dark-cyan);
+}
+
+.suvs-btn {
+    color: var(--clr-dark-cyan);
+}
+
+.suvs-btn:hover {
+    background-color: var(--clr-dark-cyan);
+    color: var(--clr-transparent-white-paragraphs);
+    border: 1px solid var(--clr-transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+.luxury {
+    background-color: var(--clr-very-dark-cyan);
+}
+
+.luxury-btn {
+    color: var(--clr-very-dark-cyan);
+}
+
+.luxury-btn:hover {
+    background-color: var(--clr-very-dark-cyan);
+    color: var(--clr-transparent-white-paragraphs);
+    border: 1px solid var(--clr-transparent-white-paragraphs);
+    cursor: pointer;
+}
+
+.learn-more {
+    padding: 10px 20px;
+    background-color: var(--clr-very-light-gray-background-headings-buttons);
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    
+}
+
+@media screen and (max-width: 700px) {
+ 
+    .main-container {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    
+}
